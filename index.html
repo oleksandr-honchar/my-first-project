@@ -24,37 +24,48 @@
   </head>
   <body>
     <body>
-    <header>
-      <a href="/">
-        <img src="logo.jpg" alt="DashBored logo" width="40" height="40" />
+    <header class="page-header">
+      <div class="container">
+      <a class="logo" href="/">
+        <img 
+          src="logo.jpg" alt="DashBored logo" 
+          width="40" 
+          height="40"
+          alt="DashBored Logo"
+          />
       </a>
+
       <nav>
-        <ul>
+        <ul class="page-nav">
           <li>
-            <a href="#Rent vs Buy Dashboard for Poland"
-              >Rent vs Buy Dashboard for Poland</a
-            >
+            <a href="#dashboard" class="link">Rent vs Buy Dashboard for Poland</a>
           </li>
-          <li><a href="#Analysis">Analysis</a></li>
+          <li>
+            <a href="#analysis" class="link">Analysis</a>
+          </li>
         </ul>
       </nav>
+      </div>
     </header>
     <main>
-      <h1>My Excel Data Analytics Project</h1>
-      <img
+      <section class="hero-section">
+      <h1 class="page-title">My Excel Data Analytics Project</h1>
+      <img class="hero-image"
         src="buy_vs_rent.webp"
         alt="Modern apartments with graphs, dark background."
-        width="1520"
+        width="1519"
         height="550"
       />
-      <p class="text">
+      <p class="hero-text">
         This repository holds all the Excel files necessary to accompany my
         first project: Rent vs Buy Dashboard for Poland ⚖️!
       </p>
-      <h2 id="Rent vs Buy Dashboard for Poland">
+      </section>
+      <section class="dashboard-section">
+      <h2 id="dashboard">
         Rent vs Buy Dashboard for Poland
       </h2>
-      <p class="text">
+      <p class="dashboard-text">
         This dashboard for the Polish real estate market is designed to assist
         investors and others in analyzing apartment prices to make informed
         decisions between renting and buying.
@@ -66,7 +77,10 @@
         rooms, price (sale or rent), floor level and proximity to the city
         center.
       </p>
-      <h2 id="Analysis">Analysis</h2>
+      </section>
+      <section class="analysis-section">
+      <h2 id="analysis">Analysis</h2>
+      </section>
     </main>
     <footer></footer>
   </body>

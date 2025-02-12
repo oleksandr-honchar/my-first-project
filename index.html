@@ -22,86 +22,296 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YETVLRH4Z2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YETVLRH4Z2');
-</script>
 
   <body>
-    <body>
     <header class="page-header">
       <div class="container">
-      <a class="logo" href="/">
-        <img 
-          src="logo.jpg" alt="DashBored logo" 
-          width="40" 
-          height="40"
-          alt="DashBored Logo"
+        <a class="logo" href="/">
+          <img
+            src="logo.jpg"
+            alt="DashBored logo"
+            width="40"
+            height="40"
+            alt="DashBored Logo"
           />
-      </a>
+        </a>
 
-      <nav>
-        <ul class="page-nav">
-          <li>
-            <a href="#dashboard" class="link">Rent vs Buy Dashboard for Poland</a>
-          </li>
-          <li>
-            <a href="#analysis" class="link">Analysis</a>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+          <ul class="page-nav">
+            <li>
+              <a href="#overview" class="link">Overview</a>
+            </li>
+            <li>
+              <a href="#dashboard" class="link">Dashboard</a>
+            </li>
+            <li>
+              <a href="#analysis" class="link">Analysis</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <div class="hero-content"><h1 class="page-title">My Excel Data Analytics Project</h1>
-           <img class="hero-image"
-                src="buy_vs_rent.webp"
-                alt="Modern apartments with graphs, dark background."
-                width="1519"
-                height="550"
+          <div class="hero-content">
+            <h1 class="page-title">My Excel Data Analytics Project</h1>
+            <img
+              class="hero-image"
+              src="buy_vs_rent.webp"
+              alt="Modern apartments with graphs, dark background."
+              width="1519"
+              height="550"
             />
-          <p class="hero-text">
-            This repository holds all the Excel files necessary to accompany my
-        first project: Rent vs Buy Dashboard for Poland ⚖️!
-          </p>
+            <p class="hero-text">
+              This repository holds all the Excel files necessary to accompany
+              my first project: Rent vs Buy Dashboard for Poland ⚖️!
+            </p>
+          </div>
         </div>
-        </div>
-      
+        <section>
+          <div class="container">
+            <div class="overview-content">
+              <h2 id="overview" class="section-title">Overview</h2>
+              <div class="container">
+                <ol class="overview">
+                  <li class="item">
+                    <h3>Business Case</h3>
+                    <div class="container">
+                      <ul class="business-case">
+                        <li class="sub-item">
+                          <h4>📌 Business Context</h4>
+                          <p>
+                            Housing affordability in Poland is a growing
+                            concern, with rising property prices and fluctuating
+                            mortgage rates creating uncertainty for potential
+                            buyers and renters. Short-term economic shifts, such
+                            as interest rate adjustments and inflation trends,
+                            further complicate decision-making.
+                          </p>
+                        </li>
+                        <li class="sub-item">
+                          <h4>🔥 Problem Statement</h4>
+                          <p>
+                            Many individuals struggle to determine whether
+                            buying or renting is the smarter financial choice in
+                            Poland’s volatile market. With mortgage rates
+                            changing and rental prices rising, making a
+                            data-driven decision is challenging without clear
+                            cost comparisons.
+                          </p>
+                        </li>
+                        <li class="sub-item">
+                          <h4>📊 Solution</h4>
+                          <p>
+                            I have developed an interactive Excel dashboard
+                            that:
+                          </p>
+                          <ul>
+                            <li>
+                              🔎 Compares the cost of buying vs. renting using
+                              key financial indicators
+                            </li>
+                            <li>
+                              📈 Focuses on short-term trends (Aug 2023 – June
+                              2024) to reflect current market conditions
+                            </li>
+                            <li>
+                              💡 Analyzes factors like mortgage payments, rental
+                              costs, interest rates, and inflation to determine
+                              affordability over different time horizons
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h3>Insights & Impact</h3>
+                    <ul class="insights">
+                      <li class="insights-item">
+                        <h4>📊 Key Insights</h4>
+                        <ul>
+                          <li class="sub-item">
+                            🏠 Renting is Cheaper (20-30%) – Mortgage payments
+                            remain high due to interest rates, making renting
+                            more affordable short-term
+                          </li>
+                          <li class="sub-item">
+                            ⏳ Break-Even: 10-15 Years – Buying only becomes
+                            cost-effective after a decade; short-term buyers
+                            face higher costs
+                          </li>
+                          <li class="sub-item">
+                            📉 Interest Rates Drive Affordability – A 1% rate
+                            drop cuts mortgage costs by 8-12%. Timing matters
+                          </li>
+                          <li class="sub-item">
+                            📊 Rental Prices Rising Slower – Renting offers
+                            financial flexibility, especially in uncertain
+                            markets
+                          </li>
+                          <li class="sub-item">
+                            📍 City Matters – Renting is better in
+                            Warsaw/Kraków, but buying makes sense in
+                            Łódź/Katowice due to lower price-to-rent ratios
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h4>🚀 Impact</h4>
+                        <ul class="impact">
+                          <li class="sub-item">
+                            ✅ Smarter Housing Decisions – Helps buyers and
+                            renters make data-driven choices.
+                          </li>
+                          <li class="sub-item">
+                            ✅ Market Insights for Investors & Policymakers –
+                            Clarifies affordability challenges and investment
+                            risks
+                          </li>
+                          <li class="sub-item">
+                            ✅ Risk Mitigation – Reveals cost-saving strategies
+                            like waiting for rate drops
+                          </li>
+                        </ul>
+                        <p>
+                          This dashboard provides real-time, actionable insights
+                          to navigate Poland’s volatile housing market. 📈🏡
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <h3>Data & Visualization</h3>
+                  </li>
+                  <li class="item">
+                    <h3>Technical Tools & Techniques</h3>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
       <section class="dashboard-section">
         <div class="container">
           <h2 id="dashboard">Rent vs Buy Dashboard for Poland</h2>
-      <p class="dashboard-text">
-        This dashboard for the Polish real estate market is designed to assist
-        investors and others in analyzing apartment prices to make informed
-        decisions between renting and buying.
-     
-        The data comes from a dataset featuring apartment sales and rental
-        listings from Poland's 15 largest cities, including Warsaw, Lodz,
-        Krakow, Wroclaw, Poznan, Gdansk, Szczecin, Bydgoszcz and Lublin. The
-        data contains detailed information on city, apartment size, number of
-        rooms, price (sale or rent), floor level and proximity to the city
-        center.
-      </p>
+          <p class="dashboard-text">
+            This dashboard for the Polish real estate market is designed to
+            assist investors and others in analyzing apartment prices to make
+            informed decisions between renting and buying. The data comes from a
+            dataset featuring apartment sales and rental listings from Poland's
+            15 largest cities, including Warsaw, Lodz, Krakow, Wroclaw, Poznan,
+            Gdansk, Szczecin, Bydgoszcz and Lublin. The data contains detailed
+            information on city, apartment size, number of rooms, price (sale or
+            rent), floor level and proximity to the city center.
+          </p>
         </div>
-      
       </section>
       <section class="analysis-section">
         <div class="container">
           <h2 id="analysis">Analysis</h2>
+          <table class="product-table">
+            <caption>
+              Minimalist food list for the balanced diet
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col" rowspan="2">Food categories</th>
+                <th scope="colgroup" colspan="2">For 1 person for a month</th>
+              </tr>
+              <tr>
+                <th scope="col">Quantity in kg</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="product-row">
+                <td>Groceries</td>
+                <td>10,1</td>
+                <td>268</td>
+              </tr>
+              <tr class="product-row">
+                <td>Vegetables</td>
+                <td>12</td>
+                <td>230</td>
+              </tr>
+              <tr class="product-row">
+                <td>Desserts</td>
+                <td>3,8</td>
+                <td>124</td>
+              </tr>
+              <tr class="product-row">
+                <td>Fruits</td>
+                <td>5,3</td>
+                <td>82</td>
+              </tr>
+              <tr class="product-row">
+                <td>Fish</td>
+                <td>1,1</td>
+                <td>205</td>
+              </tr>
+              <tr class="product-row">
+                <td>Spices</td>
+                <td>0,3</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="2">Total price</th>
+                <td>919</td>
+              </tr>
+            </tfoot>
+          </table>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="page-footer">
+      <div class="container">
+        <ul class="social-links">
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img
+                src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04insta.svg"
+                width="32"
+                height="32"
+                alt="Instagram"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img
+                src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04facebook.svg"
+                width="32"
+                height="32"
+                alt="Facebook"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank">
+              <img
+                src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04youtube.svg"
+                width="32"
+                height="32"
+                alt="YouTube"
+              />
+            </a>
+          </li>
+        </ul>
+
+        <p class="copyright-text">
+          &copy;2025 DashBored, Ltd. All rights reserved. Unless otherwise
+          indicated, all materials on the page are copyrighted by DashBored,
+          Limited. No part of this page, either text or image may be used for
+          any purpose.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

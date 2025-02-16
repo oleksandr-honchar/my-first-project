@@ -1,38 +1,16 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: system-ui, -apple-system, sans-serif;
-  color: #212121;
-  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
   background-color: #fff;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex-grow: 1;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
 }
 
 h1,
@@ -40,48 +18,107 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
-
+h6,
 p {
   margin: 0;
 }
 
-.container {
-  max-width: 1200x;
-  margin: 0 auto;
-  padding: 0 16px;
+a {
+  text-decoration: none;
 }
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* common */
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* header */
 
 .page-header {
-  margin-bottom: 20px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: #e0e0e0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
-.page-nav {
+.header-container {
   display: flex;
-  gap: 8px;
-}
-
-.page-header .container {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.page-nav .link {
-  display: block;
-  padding: 8px 12px;
-  text-decoration: none;
-  font-size: 14px;
-  text-transform: uppercase;
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
-.page-nav {
-  padding: 0;
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
+.header-logo .logo-part {
+  color: #2e2f42;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
+}
+
+.contacts {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.contacts-link {
+  display: block;
+  padding: 24px 0;
+  color: #434455;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
 }
 
 .page-title {

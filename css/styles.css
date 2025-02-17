@@ -13,6 +13,26 @@ body {
   line-height: 1.5;
 }
 
+.analyst-chat-btn {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #03a9f4;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  position: fixed;
+  bottom: 20px;
+  right: 16px;
+  z-index: 999;
+}
+
+.analyst-chat-btn:hover {
+  background-color: #0288d1;
+}
+
 h1,
 h2,
 h3,
@@ -52,6 +72,10 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  background-color: #fff;
+  position: sticky;
+  z-index: 999;
+  top: 0;
 }
 
 .header-container {
@@ -62,6 +86,11 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+}
+
+.nav-link {
+  transition: color 150ms ease-in-out 0ms,
+    background-color 150ms ease-in-out 150ms;
 }
 
 .logo {
@@ -121,21 +150,50 @@ img {
   color: #404bbf;
 }
 
-.page-title {
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  text-align: center;
-  line-height: 1.33;
-  letter-spacing: 1px;
+/* hero */
+
+.hero-title {
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 1.333;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hero-title::before,
+.hero-title::after {
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  content: "";
+}
+
+.hero-title:hover::before,
+.hero-title:hover::after {
+  background-color: #03a9f4;
 }
 
 .hero-section {
   border-top: 2px dashed #212121;
 }
 
-.hero-content {
-  padding: 45px 40px 45px 40px;
+.hero {
+  padding: 48px;
+  border-radius: 0 0 12px 12px;
+  background-color: #212121;
+  color: #fff;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 255, 0.15),
+      rgba(0, 0, 255, 0.15)
+    ),
+    url("../images/apartment_buildings.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Fills the element while maintaining aspect ratio */
+  background-position: center center; /* Centers the image */
   margin-bottom: 32px;
 }
 
@@ -149,24 +207,100 @@ img {
   margin-bottom: 16px;
 }
 
-.business-case {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.business-case-list {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
 }
 
-.business-case .sub-item {
+.business-case-list .item {
+  position: relative;
   flex-basis: calc((100% - 32px) / 2);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
 }
 
-.insights {
-  margin-top: 20px;
+.business-case-list .item:nth-child(3) {
+  flex-basis: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.business-case-list .content {
+  padding: 8px;
+}
+
+.business-case-list .title {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #212121; */
+  margin-bottom: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.333;
+}
+
+.insigths-impact {
+}
+.container {
+}
+.section-title {
+}
+.content {
+}
+
+.insights-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.insights-list .sub-item {
+  position: relative;
+  flex-basis: calc((100% - 40px) / 3);
+  border-radius: 8px;
+  padding: 8px;
+  overflow: hidden;
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.insights-list .sub-item:nth-child(4),
+.insights-list .sub-item:nth-child(5) {
+  position: relative;
+  flex-basis: calc((100% - 32px) / 2);
+  border-radius: 8px;
+  padding: 8px;
+  overflow: hidden;
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.item {
+  border: 1px solid #212121;
+  border-radius: 4px;
+  padding: 4px;
+  transition: transform 250ms ease-in-out;
+}
+
+.business-case-list .item:hover,
+.insights-list .sub-item:hover {
+  transform: scale(1.1);
+}
+
+.sub-title {
+}
+.sub-item {
+}
+.impact-list {
+}
+.text {
 }
 
 .insights .sub-item:not(:last-child),
@@ -214,6 +348,23 @@ img {
   gap: 8px;
   flex-shrink: 0;
   align-self: flex-end;
+}
+
+.social-links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #03a9f4;
+  fill: #fff;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  background-color: #fff;
+  fill: #03a9f4;
 }
 
 .visually-hidden {
